@@ -49,7 +49,31 @@
                       <block type="movement_reverse" id="141"></block>
                     </statement>
                     <next>
-                      <block type="movement_stop" id="107"></block>
+                      <block type="controls_repeat" id="164" inline="true">
+                        <value name="TIMES">
+                          <block type="math_number" id="198">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <statement name="DO">
+                          <block type="movement_forward" id="181"></block>
+                        </statement>
+                        <next>
+                          <block type="controls_repeat" id="171" inline="true">
+                            <value name="TIMES">
+                              <block type="math_number" id="214">
+                                <field name="NUM">0</field>
+                              </block>
+                            </value>
+                            <statement name="DO">
+                              <block type="movement_right" id="191"></block>
+                            </statement>
+                            <next>
+                              <block type="movement_stop" id="107"></block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
                     </next>
                   </block>
                 </next>
